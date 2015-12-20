@@ -5,4 +5,4 @@
 			$("body,html").animate({ scrollTop: $(href).offset().top }, 1000);
 		}
 	});
-)};
+});
