@@ -76,9 +76,13 @@ hr {
     margin:1em 0;
     padding:0;
 }
-input, select, texarea {
+input, select, textarea {
     vertical-align:middle;
 	box-shadow: none;
 	border: none;
 	-webkit-appearance: none;
+}
+/*Убрать выделение при фокусе в поле ХРОМ*/
+textarea:focus, input:focus{
+	outline: none;
 }
