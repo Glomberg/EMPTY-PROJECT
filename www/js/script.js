@@ -1,8 +1,9 @@
 ﻿$(document).ready(function(){
-	$("a.scroll").on("click", function(){
+	$("a.scroll").on("click", function(e){
+		e.preventDefault();
 		href = $(this).attr("href");
 		if($(href).length != 0) {
-			$("body,html").animate({ scrollTop: $(href).offset().top }, 1000);
+			$("body,html").stop().animate({ scrollTop: $(href).offset().top - 110}, 1000);
 		}
 	});
 });
